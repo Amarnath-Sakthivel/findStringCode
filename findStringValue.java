@@ -1,6 +1,4 @@
 package com.wipro.practice;
-
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class findStringValue {
@@ -8,7 +6,6 @@ public class findStringValue {
         in = in.toUpperCase();
         int val;
         String concat = "";
-
         for (String split : in.split(" ")) {
             int len = split.length();
             int sum = 0;
@@ -21,7 +18,6 @@ public class findStringValue {
                         val = Math.abs(split.charAt(i) - 'A' + 1);
                         sum += val;
                     }
-
                 }
             } else {
                 for (int i = 0; i < split.length() / 2; i++) {
@@ -32,7 +28,6 @@ public class findStringValue {
                         val = Math.abs(split.charAt(i) - 'A' + 1);
                         sum += val;
                     }
-
                 }
             }
             System.out.println(sum);
